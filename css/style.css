@@ -345,6 +345,13 @@
 	border-radius: 20px;
 	font-family: Raleway-Light;
 	margin-top:10px;
+	transition: all 0.5s ease-in-out;
+}
+.content-loginform button.btn-success:active{
+	outline:none;
+}
+.content-loginform button.btn-success:focus{
+	outline:none;
 }
 @keyframes tick{
 	0%{

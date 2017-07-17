@@ -1,0 +1,37 @@
+<h1>Welcome to Contact Page</h1>
+<div class="row">
+	<div class="col-md-2 col-lg-3"></div>
+	<div class="col-md-6 col-lg-6 contact-form">
+		<form class="form" role="form" name="contactform" ng-submit="sendMessage()" novalidate>
+			<div class="form-group">
+				<input type="text" name="fname" class="form-control" ng-model="contact.fname" placeholder="First name..." ng-required="true"/>
+				<div ng-show="contactform.fname.$touched && contactform.fname.$invalid">
+					<small class="">Enter Valid First Name...</small>
+				</div>
+			</div>
+			<div class="form-group">
+				<input type="text" name="lname" class="form-control" ng-model="contact.lname" placeholder="Last name..." ng-required="true"/>
+				<div ng-show="contactform.lname.$touched && contactform.lname.$invalid">
+					<small class="">Enter Valid Last Name...</small>
+				</div>
+			</div>
+			<div class="form-group">
+				<input type="email" name="email" class="form-control" ng-model="contact.email" placeholder="Email..." ng-required="true"/>
+				<div ng-show="contactform.email.$touched && contactform.email.$invalid">
+					<small class="">Enter Valid Email...</small>
+				</div>
+			</div>
+			<div class="form-group">
+				<textarea cols="2" rows="2" name="message" class="form-control" placeholder="Message..." ng-model="contact.message"></textarea>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-lg-4"></div>
+				<div class="col-md-4 col-lg-4 text-center">
+					<button type="submit" class="btn btn-md btn-success btn-block" ng-disabled="contactform.$invalid"><i class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp; Send</button>
+				</div>
+				<div class="col-md-4 col-lg-4"></div>
+			</div>
+		</form>
+	</div>
+	<div class="col-md-3 col-lg-3"></div>
+</div>

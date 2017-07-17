@@ -1,0 +1,1 @@
+var myMainApp = angular.module('myMainApp',['ui.router','ngAnimate']);

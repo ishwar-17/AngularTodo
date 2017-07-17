@@ -1,0 +1,52 @@
+<h1>Welcome to TodoList Page</h1>
+<div class="row">
+	<div class="col-md-2 col-lg-2"></div>
+	<div class="col-md-8 col-lg-8 todo-content">
+		<div class="row">
+			<div class="col-md-2 col-lg-2">
+				<button type="button" ng-click="order = 'name'" class="btn btn-sm btn-success">Order by Name</button>
+			</div>
+			<div class="col-md-8 col-lg-8 col-sm-8"></div>
+			<div class="col-md-2 col-lg-2">
+				<button type="button" ng-click="order = 'belt'" class="btn btn-sm btn-success">Order by Belt</button>
+			</div>
+		</div>
+		<input type="text" ng-model="search" class="form-control" placeholder="Search for list.."/>
+		<table class="table table-striped table-hover todoclass">
+			<tbody>
+				<tr ng-repeat="todo in todolist | orderBy: order | filter: search">
+					<td>{{todo.name}} - {{todo.rate | currency}}</td>
+					<td><span class="{{todo.belt}}">{{todo.belt}}</span></td>
+					<td><i class="fa fa-times-circle" aria-hidden="true" ng-click="removeTodo(todo)"></i></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="row">
+			<div class="col-md-2 col-lg-2"></div>
+			<div class="col-md-8 col-lg-8 content-form">
+				<form class="form" role="form" ng-submit="addTodo()" name="todoformlist" novalidate>
+					<div class="form-group">
+						<input type="text"  ng-model="mytododata.name" class="form-control" placeholder="Name.." ng-required="true"/>
+					</div>
+					<div class="form-group">
+						<input type="text" ng-model="mytododata.rate" class="form-control" placeholder="Rate.." ng-required="true"/>
+					</div>
+					<div class="form-group">
+						<input type="text" ng-model="mytododata.belt" class="form-control" placeholder="Belt.." ng-required="true"/>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-lg-4"></div>
+						<div class="col-md-4 col-lg-4">
+							<button type="submit" class="btn btn-sm btn-primary btn-block" ng-disabled="
+							todoformlist.$invalid"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp; Add Todo</button>
+						</div>
+						<div class="col-md-4 col-lg-4"></div>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-2 col-lg-2"></div>
+		</div>
+		<a ng-click="removeAllTodo()">Remove all TodoList</a>
+	</div>
+	<div class="col-md-2 col-lg-2"></div>
+</div>

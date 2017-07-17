@@ -1,0 +1,359 @@
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url(../fonts/Raleway-Bold.ttf);
+    src: url(../fonts/Raleway-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url(../fonts/Raleway-Regular.ttf);
+    src: url(../fonts/Raleway-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Raleway-Thin';
+    src: url(../fonts/Raleway-Thin.ttf);
+    src: url(../fonts/Raleway-Thin.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Raleway-SemiBold';
+    src: url(../fonts/Raleway-SemiBold.ttf);
+    src: url(../fonts/Raleway-SemiBold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Raleway-Medium';
+    src: url(../fonts/Raleway-Medium.ttf);
+    src: url(../fonts/Raleway-Medium.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Raleway-Light';
+    src: url(../fonts/Raleway-Light.ttf);
+    src: url(../fonts/Raleway-Light.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Raleway-Heavy';
+    src: url(../fonts/Raleway-Heavy.ttf);
+    src: url(../fonts/Raleway-Heavy.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Raleway-ExtraLight';
+    src: url(../fonts/Raleway-ExtraLight.ttf);
+    src: url(../fonts/Raleway-ExtraLight.ttf) format('truetype');
+}
+.top-navbar{
+	background-color:#fff;
+	border-color:#fff;
+	border-radius:0;
+	box-shadow: 0 2px 4px #ddd, 0px 2px 9px #ccc;
+	height:60px;
+}
+.top-navbar .navbar-link{
+	padding:5px;
+}
+.top-navbar .navbar-link li > a{
+	font-family: Raleway-Regular;
+	letter-spacing: 1px;
+}
+.top-navbar .navbar-link li > a:hover{
+	color:#b30059;
+}
+.top-navbar .navbar-brand:hover{
+	color:#b30059;
+}
+.top-navbar .navbar-brand{
+	font-family: Raleway-SemiBold;
+}
+.content-body{
+	padding:25px;
+	background-color:#f2f2f2;
+	margin:15px auto;
+	border-radius:5px;
+	box-shadow: 0 2px 1px #ded4d4, 0 3px 5px rgba(241, 237, 237, 0.53);
+}
+.content-body h1{
+	margin:0 0 15px 0;
+	text-align:center;
+	font-family: Raleway-Regular;
+	letter-spacing: 1px;
+}
+.orange{
+	background-color:orange;
+	padding:3px 10px;
+	border-radius: 6px;
+	color:#fff;
+}
+.green{
+	background-color:green;
+	padding:3px 10px;
+	border-radius: 6px;
+	color:#fff;
+}
+.blue{
+	background-color:blue;
+	padding:3px 10px;
+	border-radius: 6px;
+	color:#fff;
+}
+.yellow{
+	background-color:yellow;
+	padding:3px 10px;
+	border-radius: 6px;
+	color:#fff;
+}
+.red{
+	background-color:red;
+	padding:3px 10px;
+	border-radius: 6px;
+	color:#fff;
+}
+.todo-content{
+	background-color:#fff;
+	padding:20px;
+}
+.todo-content table{
+	margin:18px 0;
+}
+.todo-content table  > tbody tr > td:nth-child(2){
+	text-align: right;
+}
+.todo-content table  > tbody tr > td:nth-child(3){
+	text-align: center;
+}
+.todo-content table  > tbody tr > td:nth-child(3) > i{
+	color:red;
+	font-size:17px;
+	cursor: pointer;
+}
+.todo-content table  > tbody tr > td{
+	padding:10px;
+	font-family:Raleway-Regular;
+}
+.todo-content input[type="text"]{
+	border-radius:15px;
+	border-color:#ccc;
+	font-family:Raleway-Light;
+	height:40px;
+}
+.todo-content button{
+	margin-bottom:20px;
+	font-family: Raleway-Regular;
+	letter-spacing: 1px;
+	border-radius: 20px;
+	box-shadow: 0 1px 4px #f1ecec, 0 2px 3px #efefef;
+	transition:all 0.5s ease-in-out;
+}
+.todo-content button.btn-success{
+	background-color:#fff;
+	border-color:#fff;
+	color:#b3b3b3;
+}
+.todo-content button.btn-success:active{
+	background-color:#5cb85c;
+	color:#fff;
+	border-color:#4cae4c;
+	outline:none;
+}
+.todo-content button.btn-success:hover{
+	background-color:#4cae4c;
+	border-color:#4cae4c;
+	color:#fff;
+}
+.todo-content button.btn-success:focus{
+	background-color:#5cb85c;
+	color:#fff;
+	border-color:#4cae4c;
+	outline:none;
+}
+.todo-content input[type="text"]:focus{
+	border-color:#ddd;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	-o-box-shadow:none;
+	box-shadow:none;
+}
+.todo-content button.btn-primary:active{
+	outline:none;
+}
+.todo-content button.btn-primary:focus{
+	outline: none
+}
+.todo-content a{
+	color: #800080;
+	font-family: Raleway-Regular;
+	cursor: pointer;
+}
+.content-form {
+	background-color:#f2f2f2;
+	padding:20px;
+	border-radius:20px;
+	margin-bottom:10px;
+}
+/*--- Animations ---*/
+.content-body.ng-enter, .content-body.ng-move {
+  transition: all 0.8s linear;
+  opacity: 0;
+}
+.content-body.ng-enter.ng-enter-active,
+.content-body.ng-move.ng-move-active {
+  opacity: 1;
+}
+.todoclass tr.ng-leave, .todoclass.ng-move {
+  transition: all 0.5s linear;
+  opacity: 0;
+  transform: translateX(30px);
+}
+.todoclass tr.ng-leave.ng-leave-active,
+.todoclass tr.ng-move.ng-move-active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.todoclass tr.ng-enter, .todoclass.ng-move {
+  transition: all 0.5s linear;
+  opacity: 0;
+  
+}
+.todoclass tr.ng-enter.ng-enter-active,
+.todoclass tr.ng-move.ng-move-active {
+  opacity: 1;
+}
+.contact-form{
+	background-color:#fff;
+	padding:20px;
+}
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea{
+	height:40px;
+	border-color:#ddd;
+	border-radius:18px;
+	font-family:Raleway-Light;
+}
+.contact-form input[type="text"]:focus, .contact-form input[type="email"]:focus, .contact-form textarea:focus{
+	border-color:#ccc;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	-o-box-shadow:none;
+	box-shadow:none;
+}
+.contact-form button{
+	margin-bottom:20px;
+	font-family: Raleway-Regular;
+	letter-spacing: 1px;
+	border-radius: 20px;
+	box-shadow: 0 1px 4px #f1ecec, 0 2px 3px #efefef;
+	transition:all 0.5s ease-in-out;
+}
+.contact-form button.btn-success{
+	background-color:#fff;
+	border-color:#fff;
+	color:#b3b3b3;
+}
+.contact-form button.btn-success:active{
+	background-color:#5cb85c;
+	color:#fff;
+	border-color:#4cae4c;
+	outline:none;
+}
+.contact-form button.btn-success:hover{
+	background-color:#4cae4c;
+	border-color:#4cae4c;
+	color:#fff;
+}
+.contact-form button.btn-success:focus{
+	background-color:#5cb85c;
+	color:#fff;
+	border-color:#4cae4c;
+	outline:none;
+}
+.contact-form button.btn-success.disabled, .contact-form button.btn-success[disabled]{
+	background-color:#f2f2f2;
+	color:#b3b3b3;
+	border-color:#f2f2f2;;
+}
+.contact-form button.btn-primary{
+	background-color:#fff;
+	border-color:#fff;
+	color:#b3b3b3;
+}
+.contact-form button.btn-primary.disabled, .contact-form button.btn-primary[disabled]{
+	background-color:#f2f2f2;
+	color:#b3b3b3;
+	border-color:#f2f2f2;;
+}
+.contact-form small{
+	text-align: center;
+	margin-top:6px;
+	color:red;
+	font-family:Raleway-Regular;
+	display: block;
+}
+
+.contact-form input.ng-invalid.ng-touched, .contact.form textarea.ng-invalid.ng-touched{
+	border:1px solid red;
+}
+.contact-form input.ng-valid.ng-touched, .contact.form textarea.ng-valid.ng-touched{
+	border:1px solid green;
+}
+.content-loginform{
+	background-color: #fff;
+	padding:20px;
+	border-radius:20px;
+}
+.content-loginform input[type="email"], .content-loginform input[type="password"]{
+	border-color:#ddd;
+	height:40px;
+	border-radius:18px;
+	font-family: Raleway-Regular;
+}
+.content-loginform input[type="email"]:focus, .content-loginform input[type="password"]:focus{
+	border-color:#ccc;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	-o-box-shadow:none;
+	box-shadow: none;
+}
+.content-loginform input[type="checkbox"]{
+	display: none;
+}
+.content-loginform label{
+	color:#666;
+	cursor: pointer;
+}
+.content-loginform input[type="checkbox"] + .label-text:before{
+	content:"\f096";
+	font-family: FontAwesome;
+	speak:none;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+    line-height: 1.2;
+    width:10px;
+    -webkit-font-smoothing:antialiased;
+    vertical-align: middle;
+    margin-right:10px;
+    display: inline-block;	
+}
+.content-loginform input[type="checkbox"]:checked + .label-text:before{
+	content:"\f14a";
+	color:#99003d;
+	animation:tick 150ms ease-in;
+}
+.content-loginform a{
+	color:#666;
+	font-weight: Raleway-Regular;
+}
+.content-loginform button.btn-success{
+	border-radius: 20px;
+	font-family: Raleway-Light;
+	margin-top:10px;
+}
+@keyframes tick{
+	0%{
+		transform: scale(1);
+	}
+	90%{
+		transform: scale(2.1);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
